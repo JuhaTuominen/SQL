@@ -1,0 +1,14 @@
+--Select JobTitle, Count(JobTitle)
+--From [SQL Tutorial].dbo.EmployeeDemographics
+--join [SQL Tutorial].dbo.EmployeeSalary
+--	on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+--Group by JobTitle 
+--Having COUNT(JobTitle) > 1
+
+--Select JobTitle, AVG(Salary)
+--From [SQL Tutorial].dbo.EmployeeDemographics
+--join [SQL Tutorial].dbo.EmployeeSalary
+--	on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+--Group by JobTitle
+--Having AVG(Salary) > 45000 --Having statement täytyy olla Group by jälkeen.
+--order by AVG (Salary)

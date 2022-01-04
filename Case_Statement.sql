@@ -1,0 +1,26 @@
+--Select FirstName, LastName, Age,
+--case 
+--	when Age > 30 Then 'Old' --toimii ensimm‰isen m‰‰reen mukaan. jos olisi 
+--		-- when Age = 38 then 'Stanley' lis‰ttyn‰ ensimm‰isen m‰‰reen j‰lkeen se ei toimi
+--		-- mutta jos When age = 38 olisi ensimm‰isen‰ silloin se toimisi. eli "case When" 
+--		-- vaatii hieman ajatustyˆt‰ jotta sen saa toimimaan. ensimm‰inen m‰‰re toimii aina 
+--		-- toisen m‰‰reen pit‰‰ vain sopia siihen jotta tulostetaan oikein. (vaatii hieman s‰‰t‰mist‰)
+--	When Age Between 27 and 30 Then 'Young'
+--	Else 'Baby'
+--End
+--as AgeDetermination
+--From [SQL Tutorial].dbo.EmployeeDemographics
+--where age is not null
+--order by age 
+
+--Select FirstName, LastName, JobTitle, Salary,
+--case
+--	when JobTitle = 'Salesman' then Salary + (Salary * .10) --Use Case harjoitus
+--	when JobTitle = 'Accountant' then Salary + (Salary * .05)
+--	when JobTitle = 'HR' then Salary + (Salary * .000001)
+--	else Salary + (Salary * .03)
+--end
+--as NewSalary
+--From [SQL Tutorial].dbo.EmployeeDemographics
+--join [SQL Tutorial].dbo.EmployeeSalary
+--	on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
